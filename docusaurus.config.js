@@ -15,15 +15,8 @@ const config = {
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'log',
   favicon: 'https://github.com/azisaba.png',
-
-  // GitHub pages deployment config.
-  // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'AzisabaNetwork & m2en', // Usually your GitHub org/user name.
-  projectName: 'spicy-azisa-ticket', // Usually your repo name.
-
-  // Even if you don't use internalization, you can use this field to set useful
-  // metadata like html lang. For example, if your site is Chinese, you may want
-  // to replace "en" with "zh-Hans".
+  organizationName: 'AzisabaNetwork & m2en',
+  projectName: 'spicy-azisa-ticket',
   i18n: {
     defaultLocale: 'ja',
     locales: ['ja'],
@@ -36,14 +29,10 @@ const config = {
       ({
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
           editUrl: editPageLink
         },
         blog: {
           showReadingTime: true,
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
           editUrl: editPageLink
         },
         theme: {
