@@ -4,6 +4,8 @@
 const lightCodeTheme = require('prism-react-renderer/themes/github');
 const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
+const editPageLink = 'https://github.com/m2en/SpicyAzisaTicket-Docs/tree/main'
+
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'SpicyAzisaTicket Docs',
@@ -36,15 +38,13 @@ const config = {
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+          editUrl: editPageLink
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+          editUrl: editPageLink
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
