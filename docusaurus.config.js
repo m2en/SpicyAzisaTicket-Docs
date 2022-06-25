@@ -81,28 +81,45 @@ const config = {
         style: 'dark',
         links: [
           {
-            title: 'Docs',
+            title: 'Document',
             items: [
               {
-                label: 'Tutorial',
+                label: 'SAT Document',
                 to: '/docs/intro',
               },
             ],
           },
           {
-            title: 'Community',
+            title: 'PatchNotes',
             items: [
               {
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+                label: 'SAT PatchNotes',
+                to: '/blog',
               },
               {
+                label: 'GitHub Releases',
+                href: 'https://github.com/azisaba/SpicyAzisaTicket/releases'
+              }
+            ]
+          },
+          {
+            title: 'アジ鯖',
+            items: [
+              {
                 label: 'Discord',
-                href: 'https://discordapp.com/invite/docusaurus',
+                href: 'https://discord.gg/azisaba',
               },
               {
                 label: 'Twitter',
-                href: 'https://twitter.com/docusaurus',
+                href: 'https://twitter.com/AzisabaNetwork',
+              },
+              {
+                label: '公式サイト',
+                href: 'https://www.azisaba.net/',
+              },
+              {
+                label: '採用サイト(運営)',
+                href: 'https://recruit.azisaba.net/',
               },
             ],
           },
@@ -110,17 +127,17 @@ const config = {
             title: 'More',
             items: [
               {
-                label: 'Blog',
-                to: '/blog',
+                label: 'GitHub (Docs)',
+                href: 'https://github.com/m2en/SpicyAzisaTicket-Docs',
               },
               {
-                label: 'GitHub',
-                href: 'https://github.com/facebook/docusaurus',
+                label: 'GitHub (Bot)',
+                href: 'https://github.com/azisaba/SpicyAzisaTicket',
               },
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} , Inc. Built with Docusaurus.`,
       },
       prism: {
         theme: lightCodeTheme,
