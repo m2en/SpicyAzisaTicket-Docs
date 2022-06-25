@@ -4,27 +4,22 @@
 const lightCodeTheme = require('prism-react-renderer/themes/github');
 const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
+const editPageLink = 'https://github.com/m2en/SpicyAzisaTicket-Docs/tree/main'
+
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'My Site',
-  tagline: 'Dinosaurs are cool',
-  url: 'https://your-docusaurus-test-site.com',
+  title: 'SpicyAzisaTicket Docs',
+  tagline: 'SpicyAzisaTicket Document',
+  url: 'https://spicy-docs.m2en.dev',
   baseUrl: '/',
   onBrokenLinks: 'throw',
-  onBrokenMarkdownLinks: 'warn',
-  favicon: 'img/favicon.ico',
-
-  // GitHub pages deployment config.
-  // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'facebook', // Usually your GitHub org/user name.
-  projectName: 'docusaurus', // Usually your repo name.
-
-  // Even if you don't use internalization, you can use this field to set useful
-  // metadata like html lang. For example, if your site is Chinese, you may want
-  // to replace "en" with "zh-Hans".
+  onBrokenMarkdownLinks: 'log',
+  favicon: 'https://github.com/azisaba.png',
+  organizationName: 'AzisabaNetwork & m2en',
+  projectName: 'spicy-azisa-ticket',
   i18n: {
-    defaultLocale: 'en',
-    locales: ['en'],
+    defaultLocale: 'ja',
+    locales: ['ja'],
   },
 
   presets: [
@@ -34,17 +29,11 @@ const config = {
       ({
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+          editUrl: editPageLink
         },
         blog: {
           showReadingTime: true,
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+          editUrl: editPageLink
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
@@ -57,19 +46,19 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       navbar: {
-        title: 'My Site',
+        title: 'SpicyAzisaTicket Document',
         logo: {
-          alt: 'My Site Logo',
-          src: 'img/logo.svg',
+          alt: 'AzisabaNetwork Logo',
+          src: 'https://github.com/azisaba.png',
         },
         items: [
           {
             type: 'doc',
             docId: 'intro',
             position: 'left',
-            label: 'Tutorial',
+            label: 'Docs',
           },
-          {to: '/blog', label: 'Blog', position: 'left'},
+          {to: '/blog', label: 'ChangeLog(Versions)', position: 'left'},
           {
             href: 'https://github.com/facebook/docusaurus',
             label: 'GitHub',
@@ -81,28 +70,45 @@ const config = {
         style: 'dark',
         links: [
           {
-            title: 'Docs',
+            title: 'Document',
             items: [
               {
-                label: 'Tutorial',
+                label: 'SAT Document',
                 to: '/docs/intro',
               },
             ],
           },
           {
-            title: 'Community',
+            title: 'PatchNotes',
             items: [
               {
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+                label: 'SAT PatchNotes',
+                to: '/blog',
               },
               {
+                label: 'GitHub Releases',
+                href: 'https://github.com/azisaba/SpicyAzisaTicket/releases'
+              }
+            ]
+          },
+          {
+            title: 'アジ鯖',
+            items: [
+              {
                 label: 'Discord',
-                href: 'https://discordapp.com/invite/docusaurus',
+                href: 'https://discord.gg/azisaba',
               },
               {
                 label: 'Twitter',
-                href: 'https://twitter.com/docusaurus',
+                href: 'https://twitter.com/AzisabaNetwork',
+              },
+              {
+                label: '公式サイト',
+                href: 'https://www.azisaba.net/',
+              },
+              {
+                label: '採用サイト(運営)',
+                href: 'https://recruit.azisaba.net/',
               },
             ],
           },
@@ -110,17 +116,17 @@ const config = {
             title: 'More',
             items: [
               {
-                label: 'Blog',
-                to: '/blog',
+                label: 'GitHub (Docs)',
+                href: 'https://github.com/m2en/SpicyAzisaTicket-Docs',
               },
               {
-                label: 'GitHub',
-                href: 'https://github.com/facebook/docusaurus',
+                label: 'GitHub (Bot)',
+                href: 'https://github.com/azisaba/SpicyAzisaTicket',
               },
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} , Inc. Built with Docusaurus.`,
       },
       prism: {
         theme: lightCodeTheme,
