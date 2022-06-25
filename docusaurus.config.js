@@ -57,10 +57,10 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       navbar: {
-        title: 'My Site',
+        title: 'SpicyAzisaTicket Document',
         logo: {
-          alt: 'My Site Logo',
-          src: 'img/logo.svg',
+          alt: 'AzisabaNetwork Logo',
+          src: 'https://github.com/azisaba.png',
         },
         items: [
           {
